@@ -12,7 +12,7 @@ const TodoItem = ({item, index, deleteItem, handleDone}) => {
         <input type="checkbox" className="form-check-input " id="exampleCheckId1"  onChange={(e) => handleDone(e,index)} checked = {item.isDone}/>
     <span className={clazz}>{item.title}</span>
       </div>
-      <button className="btn btn-danger " onClick={() => deleteItem(index)}>
+      <button className="btn btn-danger delete-btn" onClick={() => deleteItem(index)}>
         Delete
       </button>
 

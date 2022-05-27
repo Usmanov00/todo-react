@@ -49,7 +49,7 @@ const Todo = () => {
 
 
   return (
-    <div className="container">
+    <div className="container our-container">
       <div className="col-6md">
         <div className="d-flex justify-content-between align-items-center">
           <h2>{todos.length} TodoList</h2>
@@ -59,8 +59,10 @@ const Todo = () => {
                className="form-control"
                onChange={handelChange}
                value={newTodo}
-               onKeyPress={keyPress}/>
-        <button className="btn btn-success w-100 mt-3"
+               onKeyPress={keyPress}
+               placeholder="fill it"/>
+
+        <button className="btn btn-success w-100 mt-3 add-btn"
                 onClick={addNewItem}
                 disabled={newTodo.trim().length === 0}>
           Add new item
